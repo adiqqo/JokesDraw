@@ -2,3 +2,6 @@ mat-toolbar {
   background-color: #6a29b7;
   color: white;
 }
+#content {
+  min-height: 80vh;
+}

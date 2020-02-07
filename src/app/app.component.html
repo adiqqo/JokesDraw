@@ -1,9 +1,8 @@
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 <mat-toolbar class="docs-navbar-header" >
   <mat-icon aria-hidden="false" aria-label="Example home icon">assignment</mat-icon>
   <span class="mx-2">JokesDraw</span>
 </mat-toolbar>
-<div class="container my-5">
+<div id="content" class="container my-5">
   <button class="float-right" mat-raised-button	(click)="getNewJokes()">New Jokes</button>
   <app-joke-table (eventDialog)="dialog($event)"></app-joke-table>
   <app-joke-popup></app-joke-popup>
