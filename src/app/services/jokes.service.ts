@@ -10,7 +10,7 @@ export class JokesService {
   private url = 'https://official-joke-api.appspot.com/random_ten';
   constructor(private http: HttpClient) { }
 
-  getJokes(): Observable<Joke[]> {
+  public getJokes(): Observable<Joke[]> {
     return this.http.get<Joke[]>(this.url);
   }
 }

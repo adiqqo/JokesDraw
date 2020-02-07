@@ -9,7 +9,7 @@ import { Joke } from '../models/joke.model';
 })
 export class JokePopupComponent {
   constructor(public dialog: MatDialog) { }
-  openDialog(joke: Joke): void {
+  public openDialog(joke: Joke): void {
     this.dialog.open(JokePopupDialogComponent, { data: joke });
   }
 }

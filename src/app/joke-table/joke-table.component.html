@@ -17,6 +17,6 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="dialog(row)"></tr>
 </table>
-<div *ngIf="loading else loaded">
+<div *ngIf="loading">
   <mat-progress-bar mode="indeterminate"></mat-progress-bar>
 </div>

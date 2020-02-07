@@ -9,16 +9,17 @@ import { JokeTableComponent } from './joke-table/joke-table.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'JokesDraw';
-  jokeMarked: Joke;
-  @ViewChild(JokePopupComponent, { static: false }) childPopup: JokePopupComponent;
-  @ViewChild(JokeTableComponent, { static: false }) childTable: JokeTableComponent;
+  public title = 'JokesDraw';
+  @ViewChild(JokePopupComponent, { static: false })
+  private childPopup: JokePopupComponent;
+  @ViewChild(JokeTableComponent, { static: false })
+  private childTable: JokeTableComponent;
 
-  dialog(joke: Joke): void {
+  public dialog(joke: Joke): void {
     this.childPopup.openDialog(joke);
   }
 
-  getNewJokes(): void {
+  public getNewJokes(): void {
     this.childTable.restart();
   }
 }
